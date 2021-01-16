@@ -10,7 +10,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:latex-math-formula-to-image.helloWorld"
+		"onCommand:latex-math-formula-to-image.helloWorld",
+		"onCommand:latex-math-formula-to-image.convert-selection"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
@@ -18,6 +19,10 @@
 			{
 				"command": "latex-math-formula-to-image.helloWorld",
 				"title": "Hello World"
+			},
+			{
+				"command": "latex-math-formula-to-image.convert-selection",
+				"title": "Convert latex to image"
 			}
 		]
 	},
