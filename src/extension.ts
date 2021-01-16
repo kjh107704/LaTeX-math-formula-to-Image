@@ -22,8 +22,6 @@ function getFormatType(equation:string): any {
 		return FormatType.inline;
 	}
 	else{
-		vscode.window.showErrorMessage('The selected text does not match the latex format.');
-		
 		return null;
 	}
 
@@ -58,6 +56,8 @@ function convertFormula() {
 			break;
 		}
 		default: {
+			vscode.window.showErrorMessage('The selected text does not match the latex format.');
+		
 			return;
 		}
 	}
